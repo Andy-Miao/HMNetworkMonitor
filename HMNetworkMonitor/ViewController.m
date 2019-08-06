@@ -32,7 +32,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@[@"http://www.baidu.com",@"http://github.com/Andy-Miao"][arc4random()%2]]];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@[@"http://www.baidu.com",@"http://github.com/Andy-Miao",@"https://github.com/Andy-Miao/HMNetworkMonitor.git"][arc4random()%3]]];
     [self.webView loadRequest:request];
 }
 
