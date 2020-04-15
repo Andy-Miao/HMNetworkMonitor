@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0014C138244737FD001227C9 /* HMNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0014C137244737FC001227C9 /* HMNetworkMonitor.m */; };
 		ADFB1E0B22F91948007829DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFB1E0A22F91948007829DC /* AppDelegate.m */; };
 		ADFB1E0E22F91948007829DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFB1E0D22F91948007829DC /* ViewController.m */; };
 		ADFB1E1122F91948007829DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADFB1E0F22F91948007829DC /* Main.storyboard */; };
 		ADFB1E1322F9194A007829DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADFB1E1222F9194A007829DC /* Assets.xcassets */; };
 		ADFB1E1622F9194A007829DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADFB1E1422F9194A007829DC /* LaunchScreen.storyboard */; };
 		ADFB1E1922F9194A007829DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFB1E1822F9194A007829DC /* main.m */; };
-		ADFB1E2222F9198A007829DC /* HMNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFB1E2022F91989007829DC /* HMNetworkMonitor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0014C136244737FC001227C9 /* HMNetworkMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMNetworkMonitor.h; sourceTree = "<group>"; };
+		0014C137244737FC001227C9 /* HMNetworkMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMNetworkMonitor.m; sourceTree = "<group>"; };
 		ADFB1E0622F91948007829DC /* HMNetworkMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HMNetworkMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADFB1E0922F91948007829DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ADFB1E0A22F91948007829DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -27,8 +29,6 @@
 		ADFB1E1522F9194A007829DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADFB1E1722F9194A007829DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADFB1E1822F9194A007829DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		ADFB1E2022F91989007829DC /* HMNetworkMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMNetworkMonitor.m; sourceTree = "<group>"; };
-		ADFB1E2122F9198A007829DC /* HMNetworkMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMNetworkMonitor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +42,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0014C135244737FC001227C9 /* NetworkMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				0014C136244737FC001227C9 /* HMNetworkMonitor.h */,
+				0014C137244737FC001227C9 /* HMNetworkMonitor.m */,
+			);
+			path = NetworkMonitor;
+			sourceTree = SOURCE_ROOT;
+		};
 		ADFB1DFD22F91947007829DC = {
 			isa = PBXGroup;
 			children = (
@@ -61,7 +70,7 @@
 		ADFB1E0822F91948007829DC /* HMNetworkMonitor */ = {
 			isa = PBXGroup;
 			children = (
-				ADFB1E1F22F91966007829DC /* NetworkMonitor */,
+				0014C135244737FC001227C9 /* NetworkMonitor */,
 				ADFB1E0922F91948007829DC /* AppDelegate.h */,
 				ADFB1E0A22F91948007829DC /* AppDelegate.m */,
 				ADFB1E0C22F91948007829DC /* ViewController.h */,
@@ -73,15 +82,6 @@
 				ADFB1E1822F9194A007829DC /* main.m */,
 			);
 			path = HMNetworkMonitor;
-			sourceTree = "<group>";
-		};
-		ADFB1E1F22F91966007829DC /* NetworkMonitor */ = {
-			isa = PBXGroup;
-			children = (
-				ADFB1E2122F9198A007829DC /* HMNetworkMonitor.h */,
-				ADFB1E2022F91989007829DC /* HMNetworkMonitor.m */,
-			);
-			path = NetworkMonitor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0014C138244737FD001227C9 /* HMNetworkMonitor.m in Sources */,
 				ADFB1E0E22F91948007829DC /* ViewController.m in Sources */,
 				ADFB1E1922F9194A007829DC /* main.m in Sources */,
-				ADFB1E2222F9198A007829DC /* HMNetworkMonitor.m in Sources */,
 				ADFB1E0B22F91948007829DC /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
