@@ -206,8 +206,11 @@ static HMNetworkMonitor* instance = nil;
 
 #pragma mark - 网络监测
 - (void)networkMonitorOnView:(UIView *)view {
+    if (!view) {
+        view = UIApplication.sharedApplication.keyWindow;
+    }
     
-    netView = [[UIView alloc] initWithFrame:CGRectMake(0, 54, 100, 26)];
+    netView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 88, 26)];
     [view addSubview:netView];
     
     downL = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 13)];
