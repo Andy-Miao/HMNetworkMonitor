@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   
   s.requires_arc = true
   s.source_files = 'NetworkMonitor/**/*.{h,m}'
-  s.public_header_files = 'NetworkMonitor/**/*.{h}'
+  s.public_header_files = 'NetworkMonitor/**/*.h'
 
 end
