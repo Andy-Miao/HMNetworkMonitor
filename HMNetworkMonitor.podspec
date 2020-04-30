@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '6.0'
   s.source       = { :git => 'https://github.com/Andy-Miao/HMNetworkMonitor.git', :tag => s.version }
   
-  s.requires_arc = true
-  s.source_files = 'NetworkMonitor/**/*.{h,m}'
-  s.public_header_files = 'NetworkMonitor/**/*.h'
+  s.requires_arc = true 
+  s.source_files = 'NetworkMonitor'
+  s.public_header_files = 'NetworkMonitor/*.h'
 
 end
