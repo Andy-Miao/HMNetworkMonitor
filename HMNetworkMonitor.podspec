@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage     = 'https://github.com/Andy-Miao/HMNetworkMonitor'
   s.platform     = :ios, '6.0'
   s.ios.deployment_target = '6.0'
-  s.source       = { :git => 'https://github.com/Andy-Miao/HMSafeList.git', :tag => s.version.to_s }
+  s.source       = { :git => 'https://github.com/Andy-Miao/HMNetworkMonitor.git', :tag => s.version }
   
   s.requires_arc = true
   s.source_files = 'NetworkMonitor/**/*.{h,m}'
